@@ -24,10 +24,124 @@ Una **interfaz funcional** en Java es una interfaz que define exactamente un mé
 * **Consumer:** Representa una operación que acepta un argumento y no devuelve un resultado.
 * **Supplier:** Representa un proveedor de resultados.
 
-### Ejemplo de una interfaz funcional personalizada:
+### ¿Cómo se usan?
 
-```java
-@FunctionalInterface
-public interface MiOperacion {
-    int operar(int a, int b);
-}
+1.  **Definir la interfaz funcional:**
+    
+    Java
+    
+    ```
+    @FunctionalInterface
+    interface MiOperacion {
+        int operar(int a, int b);
+    }
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+2.  **Crear una instancia usando una expresión lambda:**
+    
+    Java
+    
+    ```
+    MiOperacion suma = (a, b) -> a + b;
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+3.  **Crear una instancia usando una referencia a método:**
+    
+    Java
+    
+    ```
+    MiOperacion resta = Integer::subtract; // Referencia al método subtract de la clase Integer
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+4.  **Usar la instancia:**
+    
+    Java
+    
+    ```
+    int resultadoSuma = suma.operar(3, 5);
+    int resultadoResta = resta.operar(10, 4);
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+
+### Ejemplos prácticos con las interfaces funcionales predefinidas:
+
+*   **Predicate:**
+    
+    Java
+    
+    ```
+    Predicate<Integer> esPar = x -> x % 2 == 0;
+    boolean resultado = esPar.test(4); // true
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+*   **Function:**
+    
+    Java
+    
+    ```
+    Function<String, Integer> longitud = String::length;
+    int longitudPalabra = longitud.apply("Hola");
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+*   **Consumer:**
+    
+    Java
+    
+    ```
+    Consumer<String> imprimir = System.out::println;
+    imprimir.accept("Mensaje");
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+*   **Supplier:**
+    
+    Java
+    
+    ```
+    Supplier<String> saludo = () -> "Hola, mundo!";
+    String mensaje = saludo.get();
+    ```
+    
+    Usa el código [con precaución](/faq#coding).
+    
+
+### Uso con Streams:
+
+Java
+
+```
+List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5);
+List<Integer> cuadrados = numeros.stream()
+                                  .map(x -> x * x)
+                                  .collect(Collectors.toList());
+```
+
+Usa el código [con precaución](/faq#coding).
+
+En este ejemplo, `map` toma una función (una interfaz funcional) para transformar cada elemento del stream.
+
+### Resumen
+
+Las interfaces funcionales son una herramienta poderosa en Java 8 y versiones posteriores. Permiten un estilo de programación más declarativo y funcional. Al entender cómo crear y usar interfaces funcionales, puedes escribir código más conciso y expresivo, especialmente cuando trabajas con colecciones de datos y operaciones de transformación.
+
+**Puntos clave:**
+
+*   **Un solo método abstracto:** Define el contrato de la interfaz.
+*   **Expresiones lambda:** Forma concisa de crear instancias de interfaces funcionales.
+*   **Referencias a métodos:** Otra forma de crear instancias, referenciando métodos existentes.
+*   **Streams:** Se utilizan ampliamente con streams para realizar operaciones como map, filter, reduce.
+
+
