@@ -6,6 +6,8 @@
 | **Uso**                      | Cuando se necesita seguridad en hilos | Cuando no se necesita seguridad en hilos |            |
 | **Aplicación**               | Utilizado en aplicaciones multihilo | Utilizado en aplicaciones de un solo hilo |
 
+### Resumen
+
 <table data-sourcepos="36:1-40:44"><tbody><tr data-sourcepos="36:1-36:49"><th data-sourcepos="36:1-36:16">Característica</th><th data-sourcepos="36:18-36:31">StringBuffer</th><th data-sourcepos="36:33-36:47">StringBuilder</th></tr><tr data-sourcepos="38:1-38:28"><td data-sourcepos="38:1-38:16">Sincronización</td><td data-sourcepos="38:18-38:21">Sí</td><td data-sourcepos="38:23-38:26">No</td></tr><tr data-sourcepos="39:1-39:56"><td data-sourcepos="39:1-39:29">Rendimiento en un solo hilo</td><td data-sourcepos="39:31-39:41">Más lento</td><td data-sourcepos="39:43-39:54">Más rápido</td></tr><tr data-sourcepos="40:1-40:44"><td data-sourcepos="40:1-40:32">Seguridad para hilos múltiples</td><td data-sourcepos="40:34-40:37">Sí</td><td data-sourcepos="40:39-40:42">No</td></tr></tbody></table>
 
 ## StringBuilder vs. StringBuffer en Java
