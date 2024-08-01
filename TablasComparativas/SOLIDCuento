@@ -1,5 +1,12 @@
 Habia una vez un reyno que cambiaba de color una vez al año solo en una ocacion especial(S), 
 estaba abierto para visitar pero cerrado para construir(O),
-el principe(hijo) podria reemplzar al rey(padre) cuando era necesario (L), 
-preferian tener muchos pequeños barcos(interfaces) en vez de una barco grande (1claseManyFuncions)(I), 
+el principe[hijo] podria reemplzar al rey[padre] cuando era necesario (L), 
+preferian tener muchos pequeños barcos[interfaces] en vez de una barco grande [1classManyFuncions](I), 
 los marineros dependian de los capitanes y no alrevez(D).
+
+Glosario
+El principe es el Hijo 
+El rey es el padre
+Los pequeños barcos son pequeñas interfaces
+El barco grande es una clase grande con muchas funciones
+Los marineros son modulos de bajo nivel y los capitanes son de alto nivel.
