@@ -24,6 +24,20 @@ Una **interfaz funcional** en Java es una interfaz que define exactamente un mé
 * **Consumer:** Representa una operación que acepta un argumento y no devuelve un resultado.
 * **Supplier:** Representa un proveedor de resultados.
 
+¿Qué son las funciones lambda?
+
+Las funciones lambda en Java son una forma concisa de representar una interfaz funcional. Son como pequeñas funciones anónimas que puedes definir directamente en el lugar donde las necesitas.
+
+¿Qué es una interfaz funcional?
+
+Una interfaz funcional es una interfaz que define exactamente un método abstracto. Sirve como un tipo para las expresiones lambda.
+
+¿Por qué usar funciones lambda?
+
+    Código más conciso: Eliminan la necesidad de escribir clases anónimas completas.
+    Programación funcional: Permiten adoptar un estilo de programación más funcional.
+    Integración con Streams: Se utilizan extensivamente con la API de Streams para realizar operaciones como map, filter, reduce, etc.
+
 ### ¿Cómo se usan?
 
 1.  **Definir la interfaz funcional:**
