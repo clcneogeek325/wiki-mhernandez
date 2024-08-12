@@ -6,6 +6,10 @@ estaba abierto para visitar pero cerrado para construir(O),
 el principe[hijo] podria reemplzar al rey[padre] cuando era necesario (L), 
 preferian tener muchos pequeños barcos[interfaces] en vez de una barco grande [1classManyFuncions](I), 
 los marineros dependian de los capitanes y no alrevez(D).
+en el reyno usaban una cadena para atar barcos al muelle, era pesada y robusta por lo cual era muy lento manipularla, pero soportaba varios barcos ala vez(StringBuffer),
+y habia una segunda cadana mas ligera, pero era mas rapida de atar y desatar, solo que solo podia atar un barco ala vez(StringBuilder),
+para las fiestas el reyno tenia un cheff era el encargado de preparar los platos más exquisitos utilizando técnicas paralelas y preparar grandes cantidades de comida ya que tenia varias recetas(Stream Parallel).
+el Mayordomo era el encargado de asignar las tareas a los cocineros y garantizar que la comida llegara a la mesa a tiempo, ya que estaba contante mente monitoreando el trabajo de los cocineros(Excecutor Serivice).
 
 Glosario
 El principe es el Hijo 
