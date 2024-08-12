@@ -8,8 +8,10 @@ preferian tener muchos pequeños barcos[interfaces] en vez de una barco grande [
 los marineros dependian de los capitanes y no alrevez(D).
 las cadenas pesadas y lentas, permitían amarrar múltiples barcos en el reino.(StringBuffer),
 las cadenas ligeras y rapidas, permitían eran la opcion preferida para amarrar a un solo barco(StringBuilder),
-en las fiestas un chef preparaba grandes cantidades de comida exquisita usando múltiples recetas en paralelo (Stream Parallel).
+en las fiestas un CHEFF preparaba grandes cantidades de comida exquisita usando múltiples recetas en paralelo (Stream Parallel).
 el Mayordomo monitoreaba y asignaba tareas a  los cocineros y garantizaba la comida a tiempo de los comensales(Excecutor Serivice).
+en la Primavera habia 2 mercados, la primera vendia Frutas y Verduras en General(Spring Framework),
+la segunda tienda vendia comida lista para consumir, vinos, mermelada y algunos platills precocidos listo para consumirse, o para usarse en una comida mas elaborada(Spring Boot).
 
 
 Glosario
