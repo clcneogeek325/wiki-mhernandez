@@ -9,12 +9,12 @@
 
 
 Explicación de las diferencias:
-FileReader: Lee los caracteres directamente del archivo, uno por uno. Esto puede ser ineficiente para lecturas grandes o frecuentes, ya que implica muchas llamadas al sistema operativo.
-    BufferedReader: Crea un búfer en memoria donde almacena los caracteres leídos. Al leer, primero intenta obtener los datos del búfer, reduciendo las llamadas al sistema operativo y mejorando el rendimiento. Además, ofrece el método readLine() para leer una línea completa, lo cual es muy útil en muchas situaciones.
+  * FileReader: Lee los caracteres directamente del archivo, uno por uno. Esto puede ser ineficiente para lecturas grandes o frecuentes, ya que implica muchas llamadas al sistema operativo.
+  * BufferedReader: Crea un búfer en memoria donde almacena los caracteres leídos. Al leer, primero intenta obtener los datos del búfer, reduciendo las llamadas al sistema operativo y mejorando el rendimiento. Además, ofrece el método readLine() para leer una línea completa, lo cual es muy útil en muchas situaciones.
 
 En resumen:
-FileReader: Es más básico y menos eficiente, pero puede ser suficiente para tareas simples.
-BufferedReader: Es más eficiente y flexible, ideal para tareas más complejas como procesar archivos grandes o leer línea por línea.
+    * FileReader: Es más básico y menos eficiente, pero puede ser suficiente para tareas simples.
+    * BufferedReader: Es más eficiente y flexible, ideal para tareas más complejas como procesar archivos grandes o leer línea por línea.
 
 Cuándo usar cada uno:
 
