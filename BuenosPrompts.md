@@ -1,0 +1,1 @@
+﻿It acts as a multiple choice questionnaire with 4 possible answers, Java 17 certification for the Lists and Collections module, ask me the first question and wait for me to answer the question, go question by question and so on until you complete 5 questions, after completing the 5 questions, count how many good questions I had and how many were wrong.
